@@ -1,0 +1,22 @@
+node_modules/
+artifacts/
+cache/
+web/dist/
+.env
+web/.env.local
+reference/
+
+web3-app/node_modules/
+web3-app/build/
+web3-app/.env.local
+
+# Local sessions, temporary exports and private configuration
+local-session/
+tmp/
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+*.log
+~$*
+Bao_cao_Thuc_hanh_Blockchain_*.docx

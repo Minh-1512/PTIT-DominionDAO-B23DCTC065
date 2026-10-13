@@ -1,0 +1,24 @@
+{
+  "network": "localhost",
+  "chainId": 31337,
+  "recordedAt": "2026-10-13T02:29:45.620Z",
+  "first": {
+    "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+    "deploymentHash": "0x0b3e2ed18ffc9b021f93da3505f1f962708576f0d0ce0710231961ac79456f80",
+    "setBalanceHash": "0x292a23470598e8786899ae1610337a12f509666ac000ac74e483745169e491bd",
+    "block": 11,
+    "initial": "0",
+    "result": "500000000"
+  },
+  "token": {
+    "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+    "deploymentHash": "0xf6548ad68ca7721211c385ded28275110f8506ab36572b8b6d0fc56bc92652b8",
+    "name": "Tether USD Practice",
+    "symbol": "USDT",
+    "decimals": "6",
+    "supply": "1000000000000",
+    "receiver": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "receivedBaseUnits": "120000000",
+    "allowanceAfterSpend": "0"
+  }
+}

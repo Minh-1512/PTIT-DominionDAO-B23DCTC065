@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-13T03:52:51.948Z",
+  "chainId": 11155111,
+  "address": "0x63a83d05452b313338B0992D11d49e0C60ECf019",
+  "balanceETH": "0.025",
+  "proposals": [
+    {
+      "id": "0",
+      "title": "Hỗ trợ bạn A",
+      "description": "Biểu quyết chuyển 0.005 ETH cho bạn A trong bài thực hành.",
+      "amountETH": "0.005",
+      "duration": "1791863460",
+      "paid": true,
+      "beneficiary": "0x6F8b99C4Cb8Cd288058974E63f5485e7e54F037d",
+      "proposer": "0xeB545a9D2a24ce8c6f23680afA1A0c7b1b27B935",
+      "upvotes": "2",
+      "downvotes": "1",
+      "votes": [
+        [
+          "0xeB545a9D2a24ce8c6f23680afA1A0c7b1b27B935",
+          "1791863184",
+          true
+        ],
+        [
+          "0x536E1C79bfBDB91c5c5cf8c5A4dfc5d70b857a4b",
+          "1791863208",
+          true
+        ],
+        [
+          "0x0c5031D5A5bDB5B3E88c086f077a7f79DdFd9774",
+          "1791863232",
+          false
+        ]
+      ],
+      "beneficiaryCurrentETH": "0.005"
+    }
+  ]
+}

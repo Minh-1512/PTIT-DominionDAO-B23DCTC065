@@ -68,4 +68,3 @@ Mở `http://localhost:3001`. Đây là bản React 17, Create React App, react-
 Contract dựa trên [mã mẫu giảng viên](https://github.com/VuManh-07/CodeSmartcontractThucHanhPtit). Phiên bản này bổ sung kiểm tra đầu vào, thời hạn thanh toán, tồn tại đề xuất và ReentrancyGuard. Token mẫu chỉ phục vụ thực hành.
 
 Không đưa private key, cụm từ khôi phục hay file `.env` lên GitHub. Có thể cấu hình triển khai qua `.env.example`; triển khai qua MetaMask trên trang thực hành không cần nhập private key vào dự án. Sáu kiểm thử contract cùng hai bản web đã được kiểm tra thành công trên máy thực hành.
-

@@ -1,0 +1,6 @@
+const assert=require('node:assert/strict');
+const {ethers}=require('hardhat');
+describe('Cac phan co ban trong tai lieu',()=>{
+ it('FirstSmartContract luu va doc dung 500000000',async()=>{const c=await(await ethers.getContractFactory('FirstSmartContract')).deploy();await c.waitForDeployment();assert.equal(await c.getBalance(),0n);await(await c.setBalance(500000000)).wait();assert.equal(await c.getBalance(),500000000n);});
+ it('Token mau transferFrom ton trong allowance va pause',async()=>{const [owner,spender,receiver]=await ethers.getSigners();const t=await(await ethers.getContractFactory('TetherToken')).deploy(1000000000000n,'Tether USD Practice','USDT',6);await t.waitForDeployment();await(await t.approve(spender.address,20000000n)).wait();await(await t.connect(spender).transferFrom(owner.address,receiver.address,20000000n)).wait();assert.equal(await t.balanceOf(receiver.address),20000000n);assert.equal(await t.allowance(owner.address,spender.address),0n);await assert.rejects(t.connect(spender).transferFrom(owner.address,receiver.address,1n));await assert.rejects(t.connect(spender).pause());await(await t.pause()).wait();await assert.rejects(t.transfer(receiver.address,1n));await(await t.unpause()).wait();await(await t.transfer(receiver.address,1n)).wait();assert.equal(await t.balanceOf(receiver.address),20000001n);});
+});
